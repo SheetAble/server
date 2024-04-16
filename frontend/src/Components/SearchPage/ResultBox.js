@@ -3,10 +3,10 @@ import SheetBox from "../SheetsPage/Components/SheetBox";
 
 import SearchSvg from "../../Images/Taken.svg";
 
-function ResultBox({ searchResponse }) {
+function ResultBox({ searchValue, searchResponse }) {
   return (
     <div className="result_wrapper">
-      {searchResponse.length === 0 ? (
+      {searchResponse.length === 0 && searchValue.length > 0 ? (
         <NoResults />
       ) : (
         <Results searchResponse={searchResponse} />

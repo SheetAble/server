@@ -47,7 +47,10 @@ function SearchPage({ searchData }) {
               ></i>
             </div>
 
-            <ResultBox searchResponse={searchResponse} />
+            <ResultBox
+              searchValue={searchValue}
+              searchResponse={searchResponse}
+            />
           </div>
         </div>
       </Fragment>
