@@ -83,6 +83,7 @@ const InteractiveForm = () => {
                   type="text"
                   class="name"
                   name="sheetName"
+                  maxlength="50"
                   placeholder="Sheet Name"
                   onChange={handleChange}
                 />
@@ -90,6 +91,7 @@ const InteractiveForm = () => {
                   type="text"
                   class="name"
                   name="composer"
+                  maxlength="50"
                   placeholder="Composer"
                   onChange={handleChange}
                 />

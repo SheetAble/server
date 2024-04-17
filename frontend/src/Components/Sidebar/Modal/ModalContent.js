@@ -65,6 +65,7 @@ function ModalContent(props) {
           label="Sheet Name"
           className="form-field"
           name="sheetName"
+          inputProps={{ maxLength: 50 }}
           onChange={handleChange}
         />
         <TextField
@@ -72,6 +73,7 @@ function ModalContent(props) {
           label="Composer"
           className="form-field comp"
           name="composer"
+          inputProps={{ maxLength: 50 }}
           onChange={handleChange}
         />
       </form>
