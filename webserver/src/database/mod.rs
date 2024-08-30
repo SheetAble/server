@@ -14,11 +14,28 @@ pub fn establish_connection() -> SqliteConnection {
         .unwrap_or_else(|_| panic!("Error connecting to {}", database_url))
 }
 
+pub fn get_users(conn: &mut SqliteConnection) -> Vec<User> {
+    use crate::database::schema::users::dsl::*;
 
-pub fn create_user(conn: &mut SqliteConnection, email: &str, password: &str, library: &str) -> User {
+    users
+        .select(User::as_select())
+        .load(conn)
+        .expect("Error loading posts")
+}
+
+pub fn create_user(
+    conn: &mut SqliteConnection,
+    email: &str,
+    password: &str,
+    library: &str,
+) -> User {
     use crate::database::schema::users;
 
-    let new_user = NewUser { email, password, library };
+    let new_user = NewUser {
+        email,
+        password,
+        library,
+    };
 
     diesel::insert_into(users::table)
         .values(&new_user)
