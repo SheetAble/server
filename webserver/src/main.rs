@@ -1,3 +1,7 @@
+mod database;
+mod server;
+
 fn main() {
-    println!("Hello, world!");
+  println!("Starting server...");
+  server::run_server();
 }
