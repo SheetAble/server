@@ -1,0 +1,4 @@
+/target
+.env
+database.db
+data/
