@@ -35,7 +35,6 @@
     "eslint-plugin-storybook": "^0.11.0",
     "globals": "^15.11.0",
     "i18next": "^23.16.5",
-    "postcss": "^8.4.48",
     "react-i18next": "^15.1.1",
     "postcss": "^8.4.48",
     "storybook": "^8.4.2",
