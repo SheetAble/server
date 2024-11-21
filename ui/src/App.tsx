@@ -15,6 +15,7 @@ function App() {
         Current lanuage: {i18n.language}
         <Button onClick={() => changeLanguage('en-GB')}>English</Button>
         <Button onClick={() => changeLanguage('fr-FR')}>Français</Button>
+        <Button onClick={() => changeLanguage('de-DE')}>German</Button>
       </div>
     </>
   )

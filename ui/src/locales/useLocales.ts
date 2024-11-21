@@ -1,15 +1,19 @@
-import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
-import gbTranslation from './en-GB.json'
-import frTranslation from './fr-FR.json'
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import deTranslation from './de-DE.json';
+import gbTranslation from './en-GB.json';
+import frTranslation from './fr-FR.json';
 
 const resources = {
   gb: {
     translation: gbTranslation
   },
   fr: {
-    translation: frTranslation
-  }
+    translation: frTranslation,
+  },
+  de: {
+    translation: deTranslation,
+  },
 };
 
 i18n
